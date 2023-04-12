@@ -1,0 +1,9 @@
+
+- name: my_handler
+  service:
+    name: nginx
+    state: started
+  notify: handler_2
+
+- name: handler_2
+  command: echo gehad from role
